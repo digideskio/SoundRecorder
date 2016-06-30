@@ -48,7 +48,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
         super();
         mContext = context;
         mDatabase = new DBHelper(mContext);
-        mDatabase.setOnDatabaseChangedListener(this);
+        DBHelper.setOnDatabaseChangedListener(this);
         llm = linearLayoutManager;
     }
 
